@@ -29,17 +29,23 @@ get "/contact" do
     erb :contact
 end
 
+get "/reply" do
+
+erb :reply
+
+end
+
 post "/reply" do
 
     from = Email.new(email: 'AlwaysBaked@bakery.com')
     to = Email.new(email: params[:email])
     subject = 'hi ' + params[:name]
     content = Content.new(type: 'text/html', value:
-    "<p>Thanks for subscribing to Always Baked Shop. Here is our catalog :)</p>
+    "<p>Thanks for subscribing to Always Baked Shop. Here is our catalog </p>
     <br>
     <br>
     <br>
-    <ul><h3>Cakes:</h3>
+    <ul><h3>Cakes</h3>
         <li>Black Forest Cakes ... $24.50</li>
         <li>Chocolate Cakes ... $24.50</li>
         <li>Strawberry Cakes ... $24.50</li>
@@ -47,7 +53,7 @@ post "/reply" do
         <li>Classical Cakes ... $30.00+</li>
     </ul>
     <br>
-    <ul><h3>Muffins:</h3> 
+    <ul><h3>Muffins</h3> 
         <li>Apple Crumble Muffins ... $3.50 per muffin</li>
         <li>Morning Glory ... $3.50 muffin</li>
         <li>CBlueberry Muffins ... $3.50 per muffin</li>
@@ -55,7 +61,7 @@ post "/reply" do
         <li>Chocolate Muffins ... $3.50 per muffin</li>
     </ul>
     <br>
-    <ul><h3>Cookies:</h3> 
+    <ul><h3>Cookies</h3> 
         <li>Oatmeal Raisin Cookies ..... $5.50 per cookie</li>
         <li>Chocolate & Walnut Cookies ..... $5.50 per cookie</li>
         <li>Double Chocolate Cookies ..... $5.50 per cookie</li>
@@ -64,7 +70,9 @@ post "/reply" do
     </ul>
     <br>
     <br>
-    <p>Always Stay Baked " + @name +!"</p>")
+    <p>Always Stay Baked </p>
+    "
+    )
     mail = Mail.new(from, subject, to, content)
   
     sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
@@ -74,4 +82,5 @@ post "/reply" do
     puts response.headers
   
     erb :reply
+    redirect "/reply"
   end
