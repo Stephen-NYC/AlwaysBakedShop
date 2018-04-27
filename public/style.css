@@ -1,0 +1,118 @@
+body{
+    background-image: url("/images/bg.jpg");
+    height: 800px;
+    width: 100%;
+    font-family: 'Zeyada', cursive;
+    font-size: 28px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.contactus{
+    font-size: 25px;
+}
+
+H5{
+    font-weight: bold;
+}
+
+nav .brand-logo.center{
+    font-size: 60px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.card .card-reveal{
+    opacity: .85;
+}
+
+.card .card-title{
+    font-weight: bold;
+    font-size: 27px;
+
+}
+.card-content{
+    font-weight: bold;
+}
+
+.navbutton{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.navbuttonn{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.background{
+    /* height: 800px; */
+    width: 100%;
+    position: sticky;
+
+}
+.navbar{
+    height: 100px;
+    background-color: rgb(255, 146, 146);
+    font-family: 'Zeyada', cursive;
+
+}
+
+h4{
+    font-weight: bold;
+}
+
+.container{
+    /* background-image: url("/images/bg2.jpg"); */    
+    background-color: rgb(255, 146, 146);
+    margin: auto;
+    /* font-weight: bold; */
+    /* vertical-align: 0px;
+    margin-bottom: 0px; */
+    /* align-content: center; */
+    
+}
+
+img.mySlides{
+height: 650px;
+width: 100%;
+margin-top: 50px;
+margin: auto;
+
+}
+
+.cake{
+    /* margin-top: 20px;
+    margin-left: 10px; */
+    height: 300px;
+    width: 300px;
+}
+
+.cookies{
+    height:300px;
+    width: 300px;
+}
+ 
+.muffins{
+    height: 300px;
+    width: 300px;
+
+}
+
+.card{
+    margin-left: 7px;
+    border: 2px solid rgba(250, 189, 189, 0.747);
+    height: 300px;
+    width: 300px;
+    font-size: 25px;
+    
+}
+
+.prices{
+    color: white;
+}
+/* .row .col.s4 {
+    padding: 0px;
+  } */

@@ -1,0 +1,25 @@
+
+<h2>❦</h2>
+<p>
+A New York landmark since 1984, We bring you old world charm with a modern flair.  
+From our signature Black Forest Cake, decadent cookies to our mouth watering muffinf, we offer the freshest baked goods anywhere Queens.  
+So, next time you’re in the neighborhood, stop on in and check out what new creations Pastry Chef Martha has added to the menu.
+</p>
+<h2>❦</h2>
+<br>
+  <h3 class="contactinfo">Sign up below and we'll send you our menu plus more exciting upcoming news!!!</h3>
+
+<form action="/reply" method="post" class="form">
+
+  <input type="text" name="name" placeholder="Please enter your name." value="<%= @name %>">
+  <input type="email" name="email" placeholder="Please enter your email." value="<%= @email %>" id="emailaddress">
+  <input type="text" name="content" placeholder="Send us some feedback! :)" value="<%= @content %>">
+  <input type="submit" value="Send" onclick="empty()" class="submit">
+</form>
+<br>
+
+<%# <form action="/" method="post">
+  <input type="text" name="name" placeholder="Enter your name">
+  <input type="text" name="comment" placeholder="Enter your comment">
+  <input type="submit" value="Search">
+</form>> %>
